@@ -684,11 +684,12 @@ function App() {
                               Oficialmente soy la persona con más suerte del mundo. Prepárate, porque voy a hacer que valga la pena.
                            </p>
 
-                           <div className="mt-8 flex justify-center gap-6 text-[#D32F2F]">
-                              {/* Iconos de celebración */}
-                              <span className="text-4xl animate-bounce">🥂</span>
-                              <span className="text-4xl animate-bounce delay-100">❤️</span>
-                              <span className="text-4xl animate-bounce delay-200">✨</span>
+
+                           <div className="mt-8 flex justify-center gap-6 text-[#D32F2F] items-center">
+                              {/* Imagenes Ternurines */}
+                              <img src="/imgs/ternurin1.png" alt="Ternurin 1" className="w-24 h-24 object-contain animate-bounce drop-shadow-md" />
+                              <Heart size={48} fill="currentColor" className="animate-pulse" />
+                              <img src="/imgs/ternurin2.png" alt="Ternurin 2" className="w-24 h-24 object-contain animate-bounce delay-100 drop-shadow-md" />
                            </div>
 
                            <p className="mt-8 text-xs font-mono text-gray-400 uppercase">
