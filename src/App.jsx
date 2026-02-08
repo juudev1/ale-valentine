@@ -187,7 +187,7 @@ function App() {
                      <h3 className="font-sans font-black text-lg uppercase mb-2">Por Qué Tienes Que Ser Tú</h3>
                      <div className="columns-2 gap-6 text-sm justified-text leading-snug">
                         <p className="mb-4">
-                           Al principio pensé que eras simpática. Y con el teimpo me di cuenta de que estaba en problemas serios cuando empecé a buscar excusas tontas solo para hablarte. Eres increíble..
+                           Al principio pensé que eras simpática, que prometernos ser amigos era lo mejor que podiamos hacer. Y con el teimpo me di cuenta de que estaba en problemas serios cuando empecé a buscar excusas tontas solo para hablarte. Me enamoré tremenda y perdidamente de ti.
                         </p>
                         <p className="mb-4">
                            La verdad es que no entiendo cómo sigo teniendo tanta suerte. Eres demasiado guapa para ser tan lista, y demasiado lista para estar conmigo 💖. Eres, sin exagerar, mi persona favorita.
@@ -196,7 +196,7 @@ function App() {
                   </div>
 
                   <div className="border-t-2 border-black pt-4 mt-8 flex gap-6 items-start">
-                     <div className="bg-black text-white p-4 flex-shrink-0 text-center w-32">
+                     <div className="bg-black text-white p-4 flex-shrink-0 text-center w-28">
                         <Microscope size={40} className="mx-auto mb-2 text-white" />
                         <span className="block font-black text-2xl">200%</span>
                      </div>
@@ -204,6 +204,9 @@ function App() {
                         <h4 className="font-black font-display text-lg md:text-xl uppercase mb-1">Descubrimiento Médico</h4>
                         <p className="text-sm justified-text italic font-serif">
                            "Científicos de la Universidad Ternurin confirman: Tu sonrisa reduce el estrés instantáneamente. Efectos secundarios incluyen: enamoramiento crónico."
+                        </p>
+                        <p className="text-sm justified-text italic font-serif">
+                           Verte sonreir es lo mejor que me puede pasar en el día. Tu rostro nunca debería dejar de brillar. Y por eso quiero que sepas que siempre voy a estar ahí para ti, para hacerte sonreir y para cuidarte.
                         </p>
                      </div>
                   </div>
@@ -218,8 +221,8 @@ function App() {
 
                   <div className="space-y-6 flex-1">
                      {[
-                        { t: "MAÑANA", i: Sun, d: "Soleado", n: "Radiante como tú", c: "text-black" },
-                        { t: "TARDE", i: CloudRain, d: "Lluvia", n: "De besos (sin paraguas)", c: "text-black" },
+                        { t: "MAÑANA", i: Sun, d: "Soleado", n: "Tan Radiante como tú", c: "text-black" },
+                        { t: "TARDE", i: CloudRain, d: "Lluvia", n: "De besos (y sin paraguas)", c: "text-black" },
                         { t: "NOCHE", i: Moon, d: "Despejado", n: "Alto romance visible", c: "text-black" },
                      ].map((x, i) => (
                         <div key={i} className="flex flex-col items-center text-center border-b border-gray-400 pb-4 last:border-0">
@@ -232,8 +235,8 @@ function App() {
                   </div>
 
                   <div className="bg-gray-200 p-2 text-center mt-4 border border-black">
-                     <span className="font-black text-[10px] uppercase block mb-1">ADVERTENCIA</span>
-                     <p className="text-[9px] leading-tight">Se esperan ráfagas de ternura de alta velocidad.</p>
+                     <span className="font-black text-[14px] uppercase block mb-1">ADVERTENCIA</span>
+                     <p className="text-[12px] leading-tight">Se esperan ráfagas de ternura de alta velocidad.</p>
                   </div>
                </div>
             </div>
@@ -253,7 +256,7 @@ function App() {
                   <div className="flex gap-8">
                      <div className="w-1/3 text-sm justified-text font-serif leading-snug">
                         <p>
-                           El índice "Botas del Corazón" cerró hoy en máximos históricos. Las acciones de <strong>'TU y YO S.A.S.</strong> se han disparado un 5000% tras los rumores de una fusión permanente.
+                           Nuestro reportero del mercado <strong>Botas</strong> nos dice que la bolsa está en un estado de gran euforia. Ha revisado los planos del futuro y ha dado su visto bueno: sí, cabemos los cinco en la misma cama (aunque él ocupe el 80% del espacio; según nos comenta se va a dar mucho gusto con su comida ahora que tiene un padre).
                         </p>
                      </div>
                      <div className="w-2/3 border-2 border-black p-1">
