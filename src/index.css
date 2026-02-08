@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;900&family=UnifrakturMaguntia&family=Great+Vibes&family=Pinyon+Script&display=swap');
+
+@font-face {
+  font-family: 'Valentine';
+  src: url('/fonts/Valentine.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cursiva';
+  src: url('/fonts/cursiva.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Fallback class to debug */
+.font-valentine-debug {
+  font-family: 'Great Vibes', cursive !important;
+}
+
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Cinzel", serif;
+  --font-masthead: "UnifrakturMaguntia", cursive;
+}
+
+body {
+  background-color: #d1cdc7; /* Darker, more organic background surrounding the paper */
+}
+
+/* 
+  HYPER-REALISTIC PAPER TEXTURE 
+  - Warmer base color (#fbf0e4)
+  - Heavier visible grain
+  - Slight vignette
+*/
+.bg-paper {
+  background-color: #f7f1e3;
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.02), rgba(0,0,0,0) 5%, rgba(0,0,0,0) 95%, rgba(0,0,0,0.02)),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  box-shadow: 
+    0 1px 1px rgba(0,0,0,0.15), 
+    0 10px 0 -5px #eee, 
+    0 10px 1px -4px rgba(0,0,0,0.15), 
+    0 20px 0 -10px #eee, 
+    0 20px 1px -9px rgba(0,0,0,0.15);
+}
+
+/* 
+  INK BLEED EFFECT
+  - Very subtle text shadow to simulate ink spreading on porous paper
+  - Dark grey instead of black for realism
+*/
+.text-ink {
+  color: #1a1a1a;
+  text-shadow: 0.5px 0.5px 0px rgba(0,0,0,0.05);
+}
+
+/* 
+  NEWSPAPER TYPOGRAPHY UTILITIES 
+*/
+.drop-cap::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-size: 3.8rem;
+  line-height: 0.8;
+  font-weight: 900;
+  margin-right: 0.6rem;
+  margin-top: 0.1rem;
+  color: #000;
+}
+
+.justified-text {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+/* 
+  RETRO PHOTO FILTER 
+  - Halftone-ish look via heavy contrast and sepia
+*/
+.photo-filter {
+  filter: grayscale(100%) contrast(1.2) sepia(0.2) brightness(0.95);
+  mix-blend-mode: multiply;
+}
+
+/* 
+  COMPLEX BORDERS 
+*/
+.border-thick-thin-b {
+  border-bottom: 5px double #1a1a1a;
+}
+.border-thick-thin-t {
+  border-top: 5px double #1a1a1a;
+}
+
+/* 
+  VINTAGE COLORS
+*/
+.text-vintage-red {
+  color: #c0392b;
+  text-shadow: 1px 1px 0px rgba(192, 57, 43, 0.1);
+}
